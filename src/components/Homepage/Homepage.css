@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.home-title{
+    display: flex;
+    width: 25%;
+    margin: auto;
+    margin-top: 60px;
+    font-size: 50px;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title-start{
+    margin-right: 0.3em;
+}
