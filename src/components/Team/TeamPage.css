@@ -1,0 +1,23 @@
+.inactive{
+    opacity: 0;
+}
+
+.team-header{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.team-description{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.team-container{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}

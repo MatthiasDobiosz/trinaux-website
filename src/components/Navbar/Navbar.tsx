@@ -18,31 +18,35 @@ const Navbar = () => {
             <MotionLink 
                 to="/"
                 whileHover={{textDecoration: "underline", color:"orange"}}
+                initial={{ color: "#d5def5"}}
                 > 
                 Home 
             </MotionLink>
             <MotionLink 
                 to="/about"
                 whileHover={{textDecoration: "underline", color:"orange"}}
-                initial={{ y: 0}}
+                initial={{ color: "#d5def5"}}
                 > 
                 About Us 
             </MotionLink>
             <MotionLink 
                 to="/team"
                 whileHover={{textDecoration: "underline", color:"orange"}}
+                initial={{ color: "#d5def5"}}
                 >           
                 Team 
             </MotionLink>
             <MotionLink 
                 to="/services"
                 whileHover={{textDecoration: "underline", color:"orange"}}
+                initial={{ color: "#d5def5"}}
                 > 
                 Services 
             </MotionLink>
             <MotionLink 
                 to="/contact"
                 whileHover={{textDecoration: "underline", color:"orange"}}
+                initial={{ color: "#d5def5"}}
                 > 
                 Contact 
             </MotionLink>

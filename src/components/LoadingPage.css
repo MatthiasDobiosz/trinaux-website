@@ -1,0 +1,35 @@
+.Loading-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    overflow: hidden;
+    place-content: center;
+    -webkit-transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.T-svg{
+    width: 50%;
+    overflow: visible;
+    stroke: rgb(209, 8, 8);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.x-svg{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 40%;
+    overflow: visible;
+    stroke: rgb(209, 105, 8);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}

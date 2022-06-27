@@ -45,3 +45,10 @@
     margin: 0 2em 0 2em;
 }
 
+@media screen and (max-width: 1300) {
+    .navbar-container{
+        font-size: 30px;
+    }
+    
+}
+
