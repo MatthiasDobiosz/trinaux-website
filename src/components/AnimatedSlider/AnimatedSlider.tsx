@@ -76,7 +76,7 @@ const AnimatedSlider = (props:{pictures: string[], titles: string[]}) => {
                 </motion.div>
             </AnimatePresence>
             <motion.div className="next"
-            whileHover={{backgroundColor: "orange"}}
+            whileHover={{fill: "orange", transition:{duration: 1}}}
             onClick={() => incrementIndex(1)}
             >
                 <i className="fas fa-chevron-right">

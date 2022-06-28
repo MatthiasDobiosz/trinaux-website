@@ -3,7 +3,7 @@
 
 .title-container{
     width:auto;
-    background-color: #d5def5;
+    background-color: rgb(14, 14, 14);
     height: 1.6em;
     font-size: 50px;
     margin-top: 0.4em;
@@ -18,6 +18,7 @@
     display: flex;
     font-family: 'Open Sans', sans-serif;
     align-content: center;
+    color: white;
 }
 
 
@@ -36,3 +37,24 @@
         font-size: 30px;
     }
 }
+
+div.wave{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: 1
+  }
+  
+  .wave svg{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  #container {
+      position: relative;
+      background: linear-gradient(90deg, #DE26A0 0%, #068FF1 100%);
+      height: 90vh;
+  }

@@ -1,8 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap');
+
+.worker-container{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Anek Latin', sans-serif;
+}
+
 .worker-card{
-    background-color: wheat;
     display: flex;
     flex-direction: column;
+    width: 14em;
+    text-align: center;
+    border: 1px solid black;
+    height: 400px;
+    background: linear-gradient(to bottom, rgb(32, 31, 31) 0%,rgb(32, 31, 31) 30%,#000000 30%,white 30%,white 100%);
 }
+
+.card-top{
+    padding-top: 1em;
+}
+
+.card-links{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links span{
+    border-left: 1px solid white;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.card-links .selected{
+    color: orange;
+}
+
+.card-links :hover{
+    color: orange;
+}
+
 .worker-image{
+    height: 10em;
+    width: 10em;
     border-radius: 50%;
+    align-self: center;
 }
+
+.email{
+    width: 14em;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+

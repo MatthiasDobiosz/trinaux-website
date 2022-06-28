@@ -18,7 +18,7 @@
 .navbar-container{
     display: flex;
     font-family: 'Open Sans', sans-serif;
-    background-color: #8594e4;
+    background-color: #1dace4;
     font-size: 40px;
     justify-content:flex-end;
     align-items:flex-end;
@@ -40,7 +40,7 @@
 
 .navbar-container a{
     text-decoration: none;
-    color: #d5def5;
+    color: rgb(14, 14, 14);
     font-size: 0.5em;
     margin: 0 2em 0 2em;
 }

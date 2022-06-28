@@ -1,23 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Lobster&display=swap');
+
 .inactive{
     opacity: 0;
 }
 
+.active{
+    margin-top: 3em;
+}
+
 .team-header{
-    margin: auto;
-    width: 50%;
-    text-align: center;
-    padding: 10px;
+    margin: auto 73% auto auto;
+    font-family: 'Anek Latin', sans-serif;
+    width: 10%;
+    text-align: left;
+    padding: 20px;
+    color: black;
+    border-bottom: 1px solid rgb(105, 104, 104);
 }
 
 .team-description{
-    margin: auto;
-    width: 50%;
-    text-align: center;
+    margin: 2% 54% auto auto;
+    width: 30%;
+    text-align: left;
     padding: 10px;
+    color: black;
+    font-family: 'Lobster', cursive;
 }
 
 .team-container{
-    padding-top: 10%;
+    padding-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
+
+.card-row{
+    width: 100%;
+}
+
