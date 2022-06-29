@@ -49,26 +49,39 @@ const Worker = (props:{loaded: Function, loadIndex: number, title : string}) => 
     }, [])
 
     const clickHandlerProfile = () =>{
-        setRotation(180);
+        let rotate : boolean = side==="About"?true:false;
+        if(rotate){
+            setRotation(180);
+        }
+
 
         setTimeout(() => {
-            setSide(side==="About"?"profile":"About");
+            setSide("profile");
+            console.log(side);
         }, 500)
         
-        setTimeout(() => {
-            setRotation(360)
-        }, 1000)
+        if(rotate){
+            setTimeout(() => {
+                setRotation(360)
+            }, 1000)
+        }
     }
 
     const clickHandlerAbout = () => {
-        setRotation(180);
+        let rotate : boolean = side==="profile"?true:false;
+        if(rotate){
+            setRotation(180);
+        }
 
         setTimeout(() => {
-            setSide(side === "profile"?"About":"profile");
+            setSide("About");
         }, 500)
-        setTimeout(() => {
-            setRotation(360)
-        }, 1000)
+
+        if(rotate){
+            setTimeout(() => {
+                setRotation(360)
+            }, 1000)
+        }
     }
 
     return(

@@ -45,27 +45,23 @@ const Homepage = () => {
     
 
     return(
-            <div className="blank-container">
-                <div className="wave">
-                <svg width="100%" height="200px" fill="none" version="1.1"
-                xmlns="http://www.w3.org/2000/svg">
-                    <path 
-                    fill="white" 
-                    d="
-                        M0 67
-                        C 273,183
-                        822,-41
-                        1920.01,106 
-                        V 359 
-                        H 0 
-                        V 67
-                        Z">
-                    </path>
-                </svg>
+            <div className="Homepage-container"> 
+                <AnimatedSlider className="slider" pictures={imageArray} titles={imageDescriptionsTitle}/>
+                <div className="Home-text">
+                    <h1 className="explore-title">Welcome my dudes</h1>
+                    <p className="explore-description">Description</p>
+                    <button className="explore-btn">Button</button>
                 </div>
-                <div id="container">
-                </div> 
-                <div className="title-container">
+            </div>
+            
+
+    );
+};
+
+export default Homepage;
+
+/*
+<div className="title-container">
                     <h1 className="home-title"><div className="title-start">We are</div>
                     <AnimatePresence exitBeforeEnter initial={false}>
                         <motion.div 
@@ -84,12 +80,4 @@ const Homepage = () => {
                         </motion.div>
                     </AnimatePresence>
                     </h1>
-                </div>
-                <AnimatedSlider className="slider" pictures={imageArray} titles={imageDescriptionsTitle}/>
-            </div>
-            
-
-    );
-};
-
-export default Homepage;
+                </div>*/

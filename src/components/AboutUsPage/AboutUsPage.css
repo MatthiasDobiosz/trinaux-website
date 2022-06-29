@@ -1,0 +1,12 @@
+.About-Container{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5em;
+    margin-bottom: 4em;
+}
+
+.about-us-header{
+    align-self: center;
+    font-size: 4vw;
+}
