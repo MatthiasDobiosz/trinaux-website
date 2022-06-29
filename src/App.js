@@ -5,6 +5,7 @@ import Homepage from './components/Homepage/Homepage.tsx';
 import TeamPage from './components/Team/TeamPage.tsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutUsPage from './components/AboutUsPage/AboutUsPage.tsx';
+import ServicePage from './components/ServicePage/ServicePage.tsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Homepage/>}/>
         <Route path="/team" element={<TeamPage/>}/>
         <Route path="/about" element={<AboutUsPage/>}/>
+        <Route path="/services" element={<ServicePage/>}/>
       </Routes>
     </Router>
     

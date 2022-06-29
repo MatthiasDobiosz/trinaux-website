@@ -13,6 +13,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    row-gap: 3vw;
+    justify-content: center;
 }
 
 .explore-btn{
@@ -28,7 +30,7 @@
 }
 
 .explore-description{
-    width: 30%;
+    width: 50%;
     text-align: center;
     align-self: center;
 }
