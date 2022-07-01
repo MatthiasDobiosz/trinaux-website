@@ -1,6 +1,7 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import AnimatedButton from "../utils/AnimatedButton";
 import "./ImageSplit.css";
 
 type Props = {
@@ -19,8 +20,8 @@ const ImageSplit = ({title, description, picture, reverse, hasButton} : Props) =
                 <h1 className="split-text-title"> { title }</h1>
                 <div className="split-text-description"> { description } </div>
                 {hasButton !== undefined &&
-                    <div className="image-split-btn">
-                        <Link to={hasButton}><span>Click me</span></Link>
+                    <div className="split-btn-container">
+                        <AnimatedButton  link={hasButton}/>
                     </div>
                 }
             </div>

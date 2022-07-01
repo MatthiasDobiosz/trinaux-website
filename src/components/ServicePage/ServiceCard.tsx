@@ -1,5 +1,8 @@
 import React from "react";  
 import "./ServiceCard.css";
+import {Link} from "react-router-dom";
+// @ts-ignore
+import AnimatedButton from "../utils/AnimatedButton.tsx";
 
 type Props = {
     icon: string,
@@ -7,6 +10,7 @@ type Props = {
     description: string,
     color: string
 }
+
 
 const ServiceCard = ({icon, title, description, color} : Props) => {
     return(
@@ -16,6 +20,9 @@ const ServiceCard = ({icon, title, description, color} : Props) => {
             </div>
             <h5 className="service-card-title">{title}</h5>
             <div className="service-card-description">{description}</div>
+            <div className="btn-container">
+                <AnimatedButton btnSize="very-large" link="/"/>
+            </div>
         </div>
     );
 } 

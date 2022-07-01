@@ -36,12 +36,14 @@ const AnimatedSlider = (props:{pictures: string[], titles: string[]}) => {
 
     return(
         <div className="slider-container">
-            <motion.div className="prev"
-            whileHover={{backgroundColor: "orange"}}
-            onClick={() => incrementIndex(-1)}
-            >
-                <i className="fas fa-chevron-left"></i>
-            </motion.div>
+            <div className="prev-container">
+                <motion.div className="prev"
+                whileHover={{backgroundColor: "orange"}}
+                onClick={() => incrementIndex(-1)}
+                >
+                    <i className="fas fa-chevron-left"></i>
+                </motion.div>
+            </div>
             <AnimatePresence initial={false} custom={direction}>
                 <motion.img
                     key={page}
@@ -58,29 +60,33 @@ const AnimatedSlider = (props:{pictures: string[], titles: string[]}) => {
                     }}
                 />
             </AnimatePresence>
-            <AnimatePresence>
-                <motion.div 
-                className="image-title"
-                key={page}
-                variants={variants}
-                custom={direction}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                    x:{type: "spring", stiffness:300, damping: 30},
-                    opacity: { duration: 0.2}
-                }}
+            <div className="image-title-container">
+                <AnimatePresence>
+                    <motion.div 
+                    className="image-title"
+                    key={page}
+                    variants={variants}
+                    custom={direction}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{
+                        x:{type: "spring", stiffness:300, damping: 30},
+                        opacity: { duration: 0.2}
+                    }}
+                    >
+                        {props.titles[imageIndex]}
+                    </motion.div>
+                </AnimatePresence>
+            </div>
+            <div className="next-container">
+                <motion.div className="next"
+                whileHover={{backgroundColor: "orange"}}
+                onClick={() => incrementIndex(1)}
                 >
-                    {props.titles[imageIndex]}
-                </motion.div>
-            </AnimatePresence>
-            <motion.div className="next"
-            whileHover={{fill: "orange", transition:{duration: 1}}}
-            onClick={() => incrementIndex(1)}
-            >
-                <i className="fas fa-chevron-right">
-            </i></motion.div>
+                    <i className="fas fa-chevron-right">
+                </i></motion.div>
+            </div>
         </div>
     )
 

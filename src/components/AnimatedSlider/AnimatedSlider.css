@@ -4,6 +4,9 @@
   display: flex;
   font-size: 17px;
   justify-content: flex-end;
+  width: 40vw;
+  height: 20vh;
+  flex-shrink: 1;
  }
  
 .slider-image{
@@ -11,12 +14,20 @@
   top: 26%;
   height: 30vw;
   width: auto;
+  z-index: 0;
+}
+
+.image-title-container{
+  position: absolute;
+  top: 26%;
+  height: 30vw;
+  z-index: 1;
+  display: flex;
+  align-items:flex-end;
 }
 
 .image-title{
-  position: absolute;
-  left: 25%;
-  top: 80%;
+  margin-bottom: 1vh;
   background-color: #6643b599;
   font-size: 1.6vw;
   color: white;
@@ -24,14 +35,31 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.next-container{
+  position: absolute;
+  top: 26%;
+  height: 30vw;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.prev-container{
+  position: absolute;
+  top: 26%;
+  right: 91.5%;
+  height: 30vw;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
 .next,
 .prev {
-  top: calc(57% );
-  position: absolute;
   background: white;
   border-radius: 2em;
-  width: 4em;
-  height: 2.5em;
+  width: 4vw;
+  height: 2.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,13 +71,6 @@
 }
 
 
-.next {
-  right: 50%;
-}
-
-.prev {
-  left: 5%;
-}
 
 
 

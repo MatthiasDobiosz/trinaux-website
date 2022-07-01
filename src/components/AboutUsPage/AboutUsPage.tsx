@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutUsPage.css";
-// @ts-ignore
-import ImageSplit from "./ImageSplit.tsx";
+import ImageSplit from "./ImageSplit";
 
 const AboutUsPage = () => {
     return(

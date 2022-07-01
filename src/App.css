@@ -7,6 +7,10 @@ body{
     background-size: cover;
     overflow-x: hidden;
 }
+
+.svg-wave2{
+    z-index: -1;
+}
 /*
 div.wave{
     width: 100%;

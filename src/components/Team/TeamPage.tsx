@@ -2,11 +2,9 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-// @ts-ignore
-import LoadingPage from "../LoadingPage.tsx";
+import LoadingPage from "../LoadingPage";
 import "./TeamPage.css";
-// @ts-ignore
-import Worker from "./Worker.tsx";
+import Worker from "./Worker";
 
 const TeamPage = () => {
 

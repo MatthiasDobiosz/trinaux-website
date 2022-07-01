@@ -3,8 +3,7 @@ import { useState } from "react";
 import './Homepage.css';
 import { AnimatePresence, motion } from "framer-motion";
 import { wrap } from "popmotion";
-// @ts-ignore
-import AnimatedSlider from "../AnimatedSlider/AnimatedSlider.tsx";
+import AnimatedSlider from "../AnimatedSlider/AnimatedSlider";
 
 const descriptions = ["Designers", "Innovators", "Thinkers", "Trinaux"];
 const colorArray = ["blue", "yellow", "rgb(226, 15, 191)", "orange"];
@@ -46,8 +45,8 @@ const Homepage = () => {
 
     return(
             <div className="Homepage-container"> 
-            <svg style={{position: "absolute", top:"60%"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,32L48,32C96,32,192,32,288,53.3C384,75,480,117,576,149.3C672,181,768,203,864,197.3C960,192,1056,160,1152,160C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-                <AnimatedSlider className="slider" pictures={imageArray} titles={imageDescriptionsTitle}/>
+            <svg className="svg-wave" style={{position: "absolute", top:"60vh"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,32L48,32C96,32,192,32,288,53.3C384,75,480,117,576,149.3C672,181,768,203,864,197.3C960,192,1056,160,1152,160C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                <AnimatedSlider  pictures={imageArray} titles={imageDescriptionsTitle}/>
                 <div className="Home-text">
                     <h1 className="explore-title">The Nr. 1 Software-Provider</h1>
                     <p className="explore-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>

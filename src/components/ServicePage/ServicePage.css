@@ -1,0 +1,34 @@
+.services-container{
+    display: flex;
+    margin-top: 5vh;
+}
+
+.service-cards{
+    flex: 1;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15vh;
+    z-index: 1;
+}
+
+.service-image-container{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.service-image-container img{
+    width: 500px;
+    height: auto;
+}
+
+.service-image-container h1{
+    position: absolute;
+    color: white;
+    top: 50%;
+    margin-left: 10%;
+    font-size: 3em;
+    width: fit-content;
+    background-color: orange;
+    border-radius: 10%;
+}
