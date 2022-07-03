@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import "./AnimatedSlider.css";
 import { motion, AnimatePresence } from "framer-motion"; 
 import { wrap } from "popmotion";
+
+interface Props  {
+    pictures: string[];
+    titles: string[];
+}
 
 const variants = {
     enter: (direction: number) => {
@@ -24,11 +29,11 @@ const variants = {
     }
 }
 
-const AnimatedSlider = (props:{pictures: string[], titles: string[]}) => {
+const AnimatedSlider:FC<Props> = ({pictures, titles}) => {
 
     const [[page, direction], setPage] = useState([0,0]);
 
-    const imageIndex = wrap(0, props.pictures.length, page);
+    const imageIndex = wrap(0, pictures.length, page);
 
     const incrementIndex = (newDirection:number) =>{
         setPage([page+newDirection, newDirection]);
@@ -38,6 +43,7 @@ const AnimatedSlider = (props:{pictures: string[], titles: string[]}) => {
         <div className="slider-container">
             <div className="prev-container">
                 <motion.div className="prev"
+                data-testid="prev-btn"
                 whileHover={{backgroundColor: "orange"}}
                 onClick={() => incrementIndex(-1)}
                 >
@@ -48,7 +54,7 @@ const AnimatedSlider = (props:{pictures: string[], titles: string[]}) => {
                 <motion.img
                     key={page}
                     className="slider-image"
-                    src={props.pictures[imageIndex]}
+                    src={pictures[imageIndex]}
                     variants={variants}
                     custom={direction}
                     initial="enter"
@@ -75,12 +81,14 @@ const AnimatedSlider = (props:{pictures: string[], titles: string[]}) => {
                         opacity: { duration: 0.2}
                     }}
                     >
-                        {props.titles[imageIndex]}
+                        {titles[imageIndex]}
                     </motion.div>
                 </AnimatePresence>
             </div>
             <div className="next-container">
-                <motion.div className="next"
+                <motion.div 
+                data-testid="next-btn"
+                className="next"
                 whileHover={{backgroundColor: "orange"}}
                 onClick={() => incrementIndex(1)}
                 >
