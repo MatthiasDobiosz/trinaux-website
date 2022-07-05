@@ -1,5 +1,6 @@
 .service-card-container{
     width: 12vw;
+    height: 32vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

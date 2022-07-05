@@ -77,19 +77,23 @@
     .title-container{
         font-size: 40px;
     }
-
-    .Homepage-container{
-        flex-direction: column;
-    }
-
 }
 
 @media screen and (max-width: 1000px) {
     .title-container{
         font-size: 30px;
     }
+
+    .Home-text{
+        width: 100%;
+    }
     .svg-wave path{
         opacity: 0;
+    }
+
+    .Homepage-container{
+        flex-direction: column;
+        margin-top: 20%;
     }
 }
 
