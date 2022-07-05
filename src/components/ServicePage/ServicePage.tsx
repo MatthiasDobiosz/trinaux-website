@@ -1,5 +1,6 @@
 import React, {MutableRefObject, useRef} from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
+import Projectmenu from "./Projectmenu";
 // @ts-ignore
 import ServiceCard from "./ServiceCard.tsx";
 import "./ServicePage.css";
@@ -39,8 +40,8 @@ const ServicePage = () => {
                     </Row>
                 </Container>
             </div>
-            <div style={{width: "100vw", height: "100vh"}} ref={projectsRef}>
-
+            <div className="projects-area" ref={projectsRef}>
+                <Projectmenu/>
             </div>
         </>
     );

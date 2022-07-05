@@ -1,0 +1,11 @@
+.project-widget{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-widget span{
+    font-size: 30px;
+    background-color: rgb(168, 164, 164, 0.75);
+}
