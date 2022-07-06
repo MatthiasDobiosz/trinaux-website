@@ -25,8 +25,9 @@
     border-radius: 50%;
 }
 
-.fas{
+.serviceicon{
     font-size: 2vw;
+    margin: 0;
 }
 
 .service-card-title{

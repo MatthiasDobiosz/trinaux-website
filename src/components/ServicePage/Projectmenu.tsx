@@ -8,8 +8,6 @@ const Projectmenu = () => {
     const [selectedProject, setSelectedProject] = useState(0);
 
     const toggleSelectedProject = (projectid : number) => {
-        console.log(projectid)
-        console.log(selectedProject)
         setSelectedProject(selectedProject===projectid?0:projectid);
     }
 

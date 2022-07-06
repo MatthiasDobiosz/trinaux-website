@@ -60,7 +60,7 @@ const Projectwidget:FC<Props> = ({projectimage, projectName, projectId, toggleSe
                         className="close-btn" 
                         onClick={() => toggleProject()}
                         > 
-                        X 
+                        <i className="fas fa-arrow-left" id="arrow-left"></i> Back
                         </motion.div>
                         <motion.div 
                         className="project-information-container"
@@ -68,24 +68,24 @@ const Projectwidget:FC<Props> = ({projectimage, projectName, projectId, toggleSe
                         animate={{ x: 0, transition: { delay: 2}}}
                         exit={{x: -2000}}
                         >
-                            <motion.h1>{projectSpecifics.title}</motion.h1>
+                            <motion.h1 className="project-info-header">{projectSpecifics.title}</motion.h1>
                             <motion.div className = "project-list-item">
                                  <motion.div className="project-list-header">
-                                    <motion.i className="fas fa-lightbulb"></motion.i>
+                                    <motion.i className="fas fa-lightbulb projecticon"></motion.i>
                                     <motion.h2> The Idea</motion.h2>
                                  </motion.div>
                                  <motion.span>{projectSpecifics.idea}</motion.span>
                             </motion.div>
                             <motion.div className = "project-list-item">
                                  <motion.div className="project-list-header">
-                                    <motion.i className="fas fa-lightbulb"></motion.i>
+                                    <motion.i className="fas fa-lightbulb projecticon"></motion.i>
                                     <motion.h2> The Approach</motion.h2>
                                  </motion.div>
                                  <motion.span>{projectSpecifics.approach}</motion.span>
                             </motion.div>
                             <motion.div className = "project-list-item">
                                  <motion.div className="project-list-header">
-                                    <motion.i className="fas fa-lightbulb"></motion.i>
+                                    <motion.i className="fas fa-lightbulb projecticon"></motion.i>
                                     <motion.h2> Results </motion.h2>
                                  </motion.div>
                                  <motion.span>{projectSpecifics.results}</motion.span>
