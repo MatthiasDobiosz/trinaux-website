@@ -10,9 +10,7 @@ const ServicePage = () => {
     const projectsRef = useRef() as MutableRefObject<HTMLDivElement>;
 
     const scrollDown = () => {
-        console.log("click")
         projectsRef.current.scrollIntoView();
-        console.log("hey")
     }
 
     return(

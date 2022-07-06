@@ -8,6 +8,8 @@ const Projectmenu = () => {
     const [selectedProject, setSelectedProject] = useState(0);
 
     const toggleSelectedProject = (projectid : number) => {
+        console.log(projectid)
+        console.log(selectedProject)
         setSelectedProject(selectedProject===projectid?0:projectid);
     }
 
@@ -28,7 +30,7 @@ const Projectmenu = () => {
             <Row className={`${selectedProject===0?"closed":(selectedProject===2?"open":"inactive")}`}>
                 <Col>
                     <Projectwidget 
-                    projectimage="example-project-img.jpg" 
+                    projectimage="/project-2.jpg" 
                     projectName="Beispielprojekt" 
                     projectId={2} 
                     toggleSelectedProject={toggleSelectedProject}
@@ -40,7 +42,7 @@ const Projectmenu = () => {
             <Row className={`${selectedProject===0?"closed":(selectedProject===3?"open":"inactive")}`}>
                 <Col>
                     <Projectwidget 
-                    projectimage="example-project-img.jpg" 
+                    projectimage="/project-3.jpg" 
                     projectName="Beispielprojekt" 
                     projectId={3} 
                     toggleSelectedProject={toggleSelectedProject}
@@ -52,7 +54,7 @@ const Projectmenu = () => {
             <Row className={`${selectedProject===0?"closed":(selectedProject===4?"open":"inactive")}`}>
                 <Col>
                     <Projectwidget 
-                    projectimage="example-project-img.jpg" 
+                    projectimage="/project-4.jpg" 
                     projectName="Beispielprojekt" 
                     projectId={4} 
                     toggleSelectedProject={toggleSelectedProject}
@@ -64,12 +66,12 @@ const Projectmenu = () => {
             <Row className={`${selectedProject===0?"closed":(selectedProject===5?"open":"inactive")}`}>
                 <Col>
                     <Projectwidget 
-                    projectimage="example-project-img.jpg" 
+                    projectimage="/project-5.jpg" 
                     projectName="Beispielprojekt" 
                     projectId={5} 
                     toggleSelectedProject={toggleSelectedProject}
                     currentSelected={selectedProject}
-                    projectSpecifics={{title: "Projekt Enterprise", idea:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", approach:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", results:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}}
+                    projectSpecifics={{title: "Project nosuprise", idea:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", approach:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", results:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}}
                     />
                 </Col>
             </Row>

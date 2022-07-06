@@ -20,4 +20,5 @@
 .project-menu .inactive {
     height: 0%;
     position: absolute;
+    z-index: -1;
 }
