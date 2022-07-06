@@ -6,6 +6,7 @@ import TeamPage from './components/Team/TeamPage.tsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutUsPage from './components/AboutUsPage/AboutUsPage.tsx';
 import ServicePage from './components/ServicePage/ServicePage.tsx';
+import ContactPage from './components/ContactPage/ContactPage';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/team" element={<TeamPage/>}/>
         <Route path="/about" element={<AboutUsPage/>}/>
         <Route path="/services" element={<ServicePage/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
       </Routes>
     </Router>
     
